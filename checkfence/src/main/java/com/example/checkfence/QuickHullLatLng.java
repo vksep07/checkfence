@@ -4,6 +4,8 @@ package com.example.checkfence;
  * Created by Varun on 6/13/2017.
  */
 
+import android.util.Log;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.SphericalUtil;
 
@@ -12,6 +14,10 @@ import java.util.List;
 
 public class QuickHullLatLng {
 
+    public static void printLog(String title,String message)
+    {
+        Log.e(title,message);
+    }
     public static ArrayList<LatLng> quickHull(List<LatLng> points) {
 /*
         if (points.size() <= 3) {
